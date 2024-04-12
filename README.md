@@ -7,7 +7,7 @@
 - Debe utilizar la programación iterativa usando **WHILE o FOR**
 - Debe crear los comentarios de cada función tomando en cuenta **Nombre**, **Entrada**, **Salida** y **Restricciones**
 
-##numeroALista(num) (5 puntos)
+## numeroALista(num) (5 puntos)
 - La función retornará una lista donde cada una de las posiciones de la lista será para cada uno de los dígitos del número multiplicado por la cantidad de dígitos de **num**
 - El parámetro **num** debe ser Entero , puede ser positivo como negativo
 - Ejemplo, sea el número 256, tiene un largo de 3 dígitos, por lo tanto, cada dígito de 256 se multiplicará por 3
@@ -24,7 +24,7 @@
 [-32, 0, -4, -32]
 ```
 
-##listaMayoresMenores(num) (5 puntos)
+## listaMayoresMenores(num) (5 puntos)
 - Separar los dígitos de un número en dos listas, una para solo los dígitos mayores a 4 y la otra lista para los menores a 5
 - **num** debe ser entero y mayor a 0
 
@@ -37,7 +37,7 @@
 "Error: Tipo de dato no permitido "
 ```
 
-##aplanarLista(lista) (5 puntos)
+## aplanarLista(lista) (5 puntos)
 - Dado una lista que contenga, numeros o lista, retornar una lista  que solo contenga los valores sin las sublistas
 - **lista** debe ser no vacio y sus valores son enteros
 
@@ -50,7 +50,7 @@
 [3,6,9,12]
 ```
 
-##convertirSubListas(lista) (5 puntos)
+## convertirSubListas(lista) (5 puntos)
 - Dado una lista que contenga solo números enteros, retornar una lista en donde los nuúmero estará organizados en sublistas
 - La cantidad de sublistas estará determinado por el valor de un número al cuadrado cuyo resultado es más cercano al largo de la lista original
 - **lista** debe ser no vacio y sus valores son enteros
