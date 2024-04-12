@@ -1,7 +1,7 @@
-# 2022-S2 Quiz 2
+# 2024-S1 Quiz 3
 
 ## Instrucciones Generales
-- El archivo **debe** llamarse **Quiz2.py**
+- El archivo **debe** llamarse **Quiz3.py**
 - **Debe** respetar el nombre de las funciones y el nombre de los parámetros que más adelante se describen
 - Deben contruir las funciones con **Python**
 - Debe utilizar la programación iterativa usando **WHILE o FOR**
@@ -13,13 +13,13 @@
 
 ```python
 >>> numeroALista(256)
-[18, 15, 6]
+[6,15,18]
 >>> numeroALista(2552)
 [8, 20, 20, 8]
 >>> numeroALista(0)
 [0]
 >>> numeroALista(-8018)
-["-", 32, 4, 0, 32]
+[-32, 0, -4, -32]
 ```
 
 ##listaMayoresMenores(num) (5 puntos)
@@ -33,4 +33,35 @@
 [[2, 2], [5, 5]]
 >>> listaMayoresMenores("25.52")
 "Error: Tipo de dato no permitido "
+```
+
+##aplanarLista(lista) (5 puntos)
+- Dado una lista que contenga, numeros o lista, retornar una lista  que solo contenga los valores sin las sublistas
+- **lista** debe ser no vacio y sus valores son enteros
+
+```python
+>>> aplanarLista([[12,50,80],[2,8,6,7]])
+[12,50,80,2,8,6,7]
+>>> aplanarLista([[12,50,80],15,0,[2,8,6,7]])
+[12,50,80,15,0,2,8,6,7]
+>>> aplanarLista([3,6,9,12])
+[3,6,9,12]
+```
+
+##convertirSubListas(lista) (5 puntos)
+- Dado una lista que contenga solo números enteros, retornar una lista en donde los nuúmero estará organizados en sublistas
+- La cantidad de sublistas estará determinado por el valor de un número al cuadrado cuyo resultado es más cercano al largo de la lista original
+- **lista** debe ser no vacio y sus valores son enteros
+- Ejemplo:
+  - convertirSubListas([12,50,80,2,8,6,7])
+  - Esta lista tiene un largo de 7
+  - El resultado de una valor al cuadrado sería 4, es decir 2 ** 2 , es 4 y este es un valor menor a 7 que sería el largo de la lista
+  - Por lo tanto el resultado es
+  - [[12,50], [80,2]] 
+
+```python
+>>> convertirSubListas([12,50,80,2,8,6,7])
+[[12,50], [80,2]] 
+>>> convertirSubListas([12,50,80,2,10,42,8,6,7])
+[[12,50,80], [2,10,42], [8,6,7]] 
 ```
