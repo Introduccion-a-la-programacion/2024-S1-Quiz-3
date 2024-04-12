@@ -10,6 +10,8 @@
 ##numeroALista(num) (5 puntos)
 - La función retornará una lista donde cada una de las posiciones de la lista será para cada uno de los dígitos del número multiplicado por la cantidad de dígitos de **num**
 - El parámetro **num** debe ser Entero , puede ser positivo como negativo
+- Ejemplo, sea el número 256, tiene un largo de 3 dígitos, por lo tanto, cada dígito de 256 se multiplicará por 3
+- Dando como resultado [2*3, 5*3, 6*3] => [6,15,18]
 
 ```python
 >>> numeroALista(256)
